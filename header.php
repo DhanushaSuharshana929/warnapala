@@ -13,7 +13,7 @@
     </div>
    <div class="logo_part">
         <div class="logo">
-            <a href="index.html" class="brand_logo">
+            <a href="index.php" class="brand_logo">
                 <img src="images/header/logo.png" alt="logo image">
             </a>
         </div>
@@ -100,13 +100,10 @@
                 <div class="collapse navbar-collapse" id="main_nav">
                     <ul class="nav navbar-nav">
                         <li class="dropdown active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="index.html">Home Default</a></li>
-                                <li><a href="landing-page.html">landing page</a></li>
-                            </ul>
+                            <a href="index.php">Home</a>
+                            
                         </li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.php">About Us</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">services</a>
                             <ul class="dropdown-menu">
@@ -147,7 +144,7 @@
                                 <li><a href="checkout.html">Checkout</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">contact us</a></li>
+                        <li><a href="contact.php">contact us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
                         <li class="dropdown">
