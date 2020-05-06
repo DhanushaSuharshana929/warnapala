@@ -103,21 +103,15 @@
                             <a href="index.php">Home</a>
                             
                         </li>
-                        <li><a href="about.php">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">services</a>
+                        <li><a href="about.php">About</a></li>
+                       <li><a href="service.php">Services</li>
+                       <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
                             <ul class="dropdown-menu">
-                                <li><a href="service.html">services</a></li>
-                                <li><a href="services-2.html">services 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">projects</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="projects.html">projects</a></li>
-                                <li><a href="projects2.html">projects 2</a></li>
-                                <li><a href="projects-3.html">projects 3</a></li>
-                                <li><a href="projects-details.html">projects details</a></li>
+                                <li><a href="product.php">Products</a></li>
+                                <li><a href="product.php">Products-1</a></li>
+                                <li><a href="product.php">Products-2</a></li>
+                                <li><a href="product.php">Products-3</a></li>
                             </ul>
                         </li>
                          <li class="dropdown">
@@ -144,7 +138,7 @@
                                 <li><a href="checkout.html">Checkout</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.php">contact us</a></li>
+                        <li><a href="contact.php">contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
                         <li class="dropdown">
