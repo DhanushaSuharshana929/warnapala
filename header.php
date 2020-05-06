@@ -1,4 +1,4 @@
-<header class="row header navbar-static-top" id="main_navbar">
+<header class="row header navbar-static-top" id="main_navbar" style="background: linear-gradient(to bottom, rgb(140, 96, 74)10%, rgba(32, 28, 28, 0.0) 90%);">
     <div class="container">
         <div class="row m0 social-info">
             <ul class="social-icon">
@@ -6,8 +6,8 @@
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li class="tel"><a href="tel:+1234567890"><i class="fa fa-phone"></i> + (123) 456 7890 </a></li>
-                <li class="email"><a href="#"><i class="fa fa-envelope-o"></i> info@woodworkshop</a></li>
+                <li class="tel"><a href="tel:+1234567890"><i class="fa fa-phone"></i>  +94 11 366 3500 </a></li>
+                <li class="email"><a href="#"><i class="fa fa-envelope-o"></i> mail@synotec.lk</a></li>
             </ul>
         </div>
     </div>
@@ -114,98 +114,7 @@
                                 <li><a href="product.php">Products-3</a></li>
                             </ul>
                         </li>
-                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="testimonials.html">testimonial</a></li>
-                                <li><a href="team.html">team</a></li>
-                                <li><a href="faq.html">faq</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog.html">blog</a></li>
-                                <li><a href="blog-details.html">blog details</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="product.html">Product Details</a></li>
-                                <li><a href="cart.html">Cart Page</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                            </ul>
-                        </li>
                         <li><a href="contact.php">contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon icon-Search"></i></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <form action="#" method="get" class="search-form">
-                                        <input type="search" class="form-control" placeholder="Type and Enter">
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon icon-ShoppingCart"></i></a>
-                            <ul class="dropdown-menu cart-box ">
-                                <li class="cart-header">
-                                    <h4>You have 2 Items In Your Cart.</h4>
-                                </li>
-                                <li class="cart-content">
-                                    <div class="img-box">
-                                        <img src="images/header/cart.jpg" alt="Awesome Image">
-                                    </div>
-                                    <div class="content">
-                                        <a href="product.html"><h5>BATTERY SCREWDRIVER</h5></a>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <ul class="price">
-                                            <li><span class="or-price">$39.99</span></li>
-                                            <li><span class="sale-price">$24.5</span></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="cart-content">
-                                    <div class="img-box">
-                                        <img src="images/header/cart.jpg" alt="Awesome Image">
-                                    </div>
-                                    <div class="content">
-                                        <a href="product.html"><h5>BATTERY SCREWDRIVER</h5></a>
-                                        <div class="rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <ul class="price">
-                                            <li><span class="or-price">$39.99</span></li>
-                                            <li><span class="sale-price">$24.5</span></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="cart-footer">
-                                    <div class="total-price">
-                                        <h4>Total price: <span>$73.5</span></h4>
-                                    </div>
-                                    <div class="checkout-box submit">
-                                        <a class="" href="#">Checkout <i class="fa fa-shopping-cart"></i></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </div><!-- /.navbar-collapse -->
