@@ -80,10 +80,10 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-8">
-                   Copyright &copy; <a href="index.html">WoodWorkshop</a> 2016. <br class="visible-xs"> All rights reserved.
+                   Copyright &copy; <a href="index.php">Synotec Holdings</a> 2020. <br class="visible-xs"> All rights reserved.
                </div>
                <div class="right col-sm-4">
-                   Created by: <a href="http://themeforest.net/user/designarc">DesignArc</a>
+                   Created by: <a href="https://synotec.lk/">Synotec Holdings</a>
                </div>
             </div>
         </div>

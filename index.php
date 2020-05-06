@@ -80,6 +80,7 @@
 include ("./header.php");
 ?>
 <!--rv-slider-->
+
 <section class="bannercontainer row">
     <div class="rev_slider banner row m0" id="rev_slider" data-version="5.0">
         <ul>
@@ -176,7 +177,7 @@ include ("./header.php");
             </li>
         </ul>
     </div>
-</section>
+ </section>
 
 <!--experiance-area-->
 <section class="row experience-area">
@@ -188,19 +189,17 @@ include ("./header.php");
            <div class="col-sm-7 experience-info">
               <div class="content">
                   <h2>OVER 15 YEARS EXPERIENCE IN INDUSTRY</h2> 
-                  <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.</p>  
+                  <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
+                  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
+                  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
+                  <br/>
+                  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
+                  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
+                  </p> 
+                  <div class="row m0">
+                            <button type="submit" class="btn btn-default submit">Read More</button>
+                        </div>
               </div>
-              <ul class="content-list">
-                  <li><a href="#">Interior Furniture Manfacturing</a></li>
-                  <li><a href="#">Reparing of wooden almerah</a></li>
-                  <li><a href="#">Hardwood Flooring</a></li>
-                  <li><a href="#">Renovaion of office furnitures</a></li>
-                  <li><a href="#">Make Quality Products</a></li>
-              </ul>
-              <div class="content-image">
-              <img src="images/expreence/2.jpg" alt="">
-              </div>
-               
            </div>
        </div>
    </div>
@@ -254,6 +253,66 @@ include ("./header.php");
 <!--work-shop-->
 
 <!--testimonial-->
+
+
+<!-- latest-news-area -->
+<section class="row sectpad latest-news-area">
+    <div class="container">
+        <div class="row m0 section_header">
+           <h2>latest news</h2> 
+        </div>
+        <div class="row latest-content">
+            <div class="col-sm-4 clo-xs-12 latest">
+                <div class="row m0 latest-image">
+                    <a href="blog-details.html"><img src="images/latest-news/1.jpg" alt=""></a>
+                    <div class="latest-info-date"><a href="#"><h3>14 <small>MAR</small></h3></a></div>
+                </div>
+                <div class="latest-news-text">
+                    <a href="blog.html">
+                        <h4>Wood Work Adds Value to Your Property</h4>
+                    </a>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
+                    <div class="row m0 latest-meta">
+                        <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-sm-4 clo-xs-12  latest">
+                <div class="row m0 latest-image">
+                    <a href="blog-details.html"><img src="images/latest-news/2.jpg" alt=""></a>
+                    <div class="latest-info-date"><a href="#"><h3>14 <small>MAR</small></h3></a></div>
+                </div>
+                <div class="latest-news-text">
+                    <a href="blog-details.html">
+                        <h4>Wood Work Adds Value to Your Property</h4>
+                    </a>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
+                    <div class="row m0 latest-meta">
+                       <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 clo-xs-12 latest">
+                <div class="row m0 latest-image">
+                    <a href="blog-details.html"><img src="images/latest-news/3.jpg" alt=""></a>
+                    <div class="latest-info-date"><a href="#"><h3>14 <small>MAR</small></h3></a></div>
+                </div>
+                <div class="latest-news-text">
+                    <a href="blog.html">
+                        <h4>Wood Work Adds Value to Your Property</h4>
+                    </a>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
+                    <div class="row m0 latest-meta">
+                        <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- clients -->
 <section class="row sectpad testimonial-area">
    <div class="container">
        <div class="row m0 section_header common">
@@ -342,103 +401,6 @@ include ("./header.php");
    </div>
 </section>
 
-<!-- latest-news-area -->
-<section class="row sectpad latest-news-area">
-    <div class="container">
-        <div class="row m0 section_header">
-           <h2>latest news</h2> 
-        </div>
-        <div class="row latest-content">
-            <div class="col-sm-4 clo-xs-12 latest">
-                <div class="row m0 latest-image">
-                    <a href="blog-details.html"><img src="images/latest-news/1.jpg" alt=""></a>
-                    <div class="latest-info-date"><a href="#"><h3>14 <small>MAR</small></h3></a></div>
-                </div>
-                <div class="latest-news-text">
-                    <a href="blog.html">
-                        <h4>Wood Work Adds Value to Your Property</h4>
-                    </a>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                    <div class="row m0 latest-meta">
-                        <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
-                    </div>
-                </div>
-            </div>    
-            <div class="col-sm-4 clo-xs-12  latest">
-                <div class="row m0 latest-image">
-                    <a href="blog-details.html"><img src="images/latest-news/2.jpg" alt=""></a>
-                    <div class="latest-info-date"><a href="#"><h3>14 <small>MAR</small></h3></a></div>
-                </div>
-                <div class="latest-news-text">
-                    <a href="blog-details.html">
-                        <h4>Wood Work Adds Value to Your Property</h4>
-                    </a>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                    <div class="row m0 latest-meta">
-                       <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 clo-xs-12 latest">
-                <div class="row m0 latest-image">
-                    <a href="blog-details.html"><img src="images/latest-news/3.jpg" alt=""></a>
-                    <div class="latest-info-date"><a href="#"><h3>14 <small>MAR</small></h3></a></div>
-                </div>
-                <div class="latest-news-text">
-                    <a href="blog.html">
-                        <h4>Wood Work Adds Value to Your Property</h4>
-                    </a>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                    <div class="row m0 latest-meta">
-                        <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- clients -->
-<!--<section class="row clients">
-    <div class="container">
-        <div class="row m0 section_header">
-            <h2>Our Clients</h2>
-        </div>
-        <div class="row clients-logos">
-            <div class="col-md-2 col-sm-3 col-xs-6 client">
-                <div class="row m0 inner-logo">
-                   <a href="#"><img src="images/clients-logo/1.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6 client">
-                <div class="row m0 inner-logo">
-                   <a href="#"><img src="images/clients-logo/2.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6 client">
-                <div class="row m0 inner-logo">
-                   <a href="#"><img src="images/clients-logo/3.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6 client">
-                <div class="row m0 inner-logo">
-                   <a href="#"><img src="images/clients-logo/4.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6 client">
-                <div class="row m0 inner-logo">
-                   <a href="blog-details.html"><img src="images/clients-logo/5.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6 client">
-                <div class="row m0 inner-logo">
-                   <a href="blog-details.html"><img src="images/clients-logo/6.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
 
 <!--great-work-->
 <section class="emergency-contact">

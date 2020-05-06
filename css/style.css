@@ -4928,7 +4928,7 @@ blockquote footer a {
 
 /*====================================================*/
 footer.row .footer-top {
-  background: url("../images/footer/footer-bg.jpg") no-repeat scroll center 0;
+  background: url("../images/footer/footerbg.jpg") no-repeat scroll center 0;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
