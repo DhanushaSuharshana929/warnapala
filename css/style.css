@@ -2057,12 +2057,12 @@ header.row.affix .social-info {
 }
 .project-listing .projects-content {
   width: 428px;
-  height: 288px;
+  height: 200px;
   background: #fff;
   position: absolute;
   top: 50%;
   right: 0;
-  padding: 40px;
+  padding: 18px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);

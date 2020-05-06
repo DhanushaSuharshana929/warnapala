@@ -74,7 +74,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+
 <!--header-->
 <?php
 include ("./header.php");
@@ -480,7 +480,7 @@ include ("./footer.php");
 <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
 <script src="vendors/magnific/jquery.magnific-popup.min.js"></script>
 <script src="js/theme.js"></script>
-</body>
+
 
 <!-- Mirrored from designarc.biz/demos/wood-workshop/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Mar 2020 08:48:52 GMT -->
 </html>
