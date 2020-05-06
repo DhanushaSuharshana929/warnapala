@@ -103,7 +103,7 @@
                             <a href="index.php">Home</a>
                             
                         </li>
-                        <li><a href="about.php">About</a></li>
+                        <li><a href="about.php">About Us</a></li>
                        <li><a href="service.php">Services</li>
                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
@@ -114,7 +114,7 @@
                                 <li><a href="product.php">Products-3</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.php">contact</a></li>
+                        <li><a href="contact.php">contact Us</a></li>
                     </ul>
                 </div>
             </div><!-- /.navbar-collapse -->
