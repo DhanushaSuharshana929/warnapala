@@ -144,7 +144,9 @@ include ("./header.php");
 </section>
 <!--MapBox-->
 <section class="map">
-    <div id="mapBox" class="row m0" data-lat="37.3818288" data-lon="-122.0636325" data-zoom="15"></div>
+    <div id="mapBox" class="row m0" data-lat="37.3818288" data-lon="-122.0636325" data-zoom="15">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d126758.35573248843!2d79.80198667721855!3d6.866787138873817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ae25bd97320a087%3A0xfa4766a56acdd267!2sSynotec%20Holdings%20Pvt.%20Ltd%2C%20No.55%20Isipathanarama%20Rd%2C%20Maharagama%2010280!3m2!1d6.8513291999999995!2d79.9171495!5e0!3m2!1sen!2slk!4v1588759419663!5m2!1sen!2slk" width="1800" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
 </section>
 
 
@@ -173,7 +175,7 @@ include ("./footer.php");
 <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
 <script src="vendors/isotope/isotope.min.js"></script>
 <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!--script src="https://maps.googleapis.com/maps/api/js"></script-->
 <script src="js/gmaps.min.js"></script>
 <script src="js/google-map.html"></script>
 
