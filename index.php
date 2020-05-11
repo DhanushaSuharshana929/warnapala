@@ -218,28 +218,28 @@ include ("./header.php");
                     <div class="post-image">
                         <img src="images/we-do/1.png"  alt="">
                     </div>
-                    <a href="#"><h4>HARDWOOD FLOORING</h4></a>
+                    <a href="product-type.php"><h4>HARDWOOD FLOORING</h4></a>
                    
                 </div>
                 <div class="item text-center">
                     <div class="post-image">
                         <img src="images/we-do/2.png"  alt="">
                     </div>
-                    <a href="#"><h4>Home Wood Work</h4></a>
+                    <a href="product-type.php"><h4>Home Wood Work</h4></a>
                     
                 </div>
                 <div class="item text-center">
                     <div class="post-image">
                         <img src="images/we-do/3.png"  alt="">
                     </div>
-                    <a href="#"><h4>Indoor Furniture</h4></a>
+                    <a href="product-type.php"><h4>Indoor Furniture</h4></a>
                    
                 </div>
                 <div class="item text-center">
                     <div class="post-image">
                         <img src="images/we-do/4.png"  alt="">
                     </div>
-                    <a href="#"><h4>Outdoor Furniture</h4></a>
+                    <a href="product-type.php"><h4>Outdoor Furniture</h4></a>
                    
                 </div>
             </div>
@@ -272,8 +272,11 @@ include ("./header.php");
                         <h4>Wood Work Adds Value to Your Property</h4>
                     </a>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                    <div class="row m0 latest-meta">
-                        <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
+                    <div class="row widget widget-tag-clouds">
+                        
+                        <div class="row widget-inner clouds">
+                            <a href="blog-details.html" class="widget-tag">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>    
@@ -287,8 +290,11 @@ include ("./header.php");
                         <h4>Wood Work Adds Value to Your Property</h4>
                     </a>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                    <div class="row m0 latest-meta">
-                       <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
+                    <div class="row widget widget-tag-clouds">
+                        
+                        <div class="row widget-inner clouds">
+                            <a href="blog-details.html" class="widget-tag">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -302,8 +308,11 @@ include ("./header.php");
                         <h4>Wood Work Adds Value to Your Property</h4>
                     </a>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                    <div class="row m0 latest-meta">
-                        <a href="#"><i class="fa fa-user"></i>Anjori Meyami</a> <a class="read_more" href="single.html"><i class="fa fa-comments"></i> Comments: 6</a>
+                    <div class="row widget widget-tag-clouds">
+                        
+                        <div class="row widget-inner clouds">
+                            <a href="blog-details.html" class="widget-tag">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>

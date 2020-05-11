@@ -1,4 +1,4 @@
-<header class="row header navbar-static-top" id="main_navbar" style="background: linear-gradient(to bottom, rgb(140, 96, 74)10%, rgba(32, 28, 28, 0.0) 90%);">
+<header class="row header navbar-static-top" id="main_navbar">
     <div class="container">
         <div class="row m0 social-info">
             <ul class="social-icon">
@@ -105,7 +105,8 @@
                         </li>
                         <li><a href="about.php">About Us</a></li>
                        <li><a href="service.php">Services</li>
-                       <li class="dropdown">
+                       <li><a href="product-details.php">Product</li>
+                       <!--li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
                             <ul class="dropdown-menu">
                                 <li><a href="product.php">Products</a></li>
@@ -113,7 +114,7 @@
                                 <li><a href="product.php">Products-2</a></li>
                                 <li><a href="product.php">Products-3</a></li>
                             </ul>
-                        </li>
+                        </li-->
                         <li><a href="contact.php">contact Us</a></li>
                     </ul>
                 </div>
