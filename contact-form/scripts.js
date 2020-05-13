@@ -181,7 +181,7 @@ function sendForm() {
 
              visitor_phone: jQuery('#txtPhone').val(),
             
-            visitor_country: jQuery('#txtCountry').val(),
+            // visitor_country: jQuery('#txtCountry').val(),
 
 //            subject: jQuery('#txtSubject').val(),
             

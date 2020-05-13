@@ -7,7 +7,7 @@ include_once(dirname(__FILE__) . '/auth.php');
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Excursion</title>
+        <title>Attraction</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -17,7 +17,7 @@ include_once(dirname(__FILE__) . '/auth.php');
         <link href="plugins/animate-css/animate.css" rel="stylesheet" />
         <link href="plugins/sweetalert/sweetalert.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/themes/all-themes.css" rel="stylesheet" /> 
+        <link href="css/themes/all-themes.css" rel="stylesheet" />
     </head>
 
     <body class="theme-red">
@@ -37,7 +37,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2>Create Excursion</h2>
+                                <h2>Create Attraction</h2>
                                 <ul class="header-dropdown">
                                     <li class="">
                                         <a href="manage-attraction.php">
@@ -47,7 +47,23 @@ include_once(dirname(__FILE__) . '/auth.php');
                                 </ul>
                             </div>
                             <div class="body">
-                                <form class="form-horizontal"  method="post"  id="form-data" enctype="multipart/form-data"> 
+                                <form class="form-horizontal"  method="post" action="post-and-get/attraction.php" enctype="multipart/form-data"> 
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <label class="form-label">Excursion Type</label>
+                                                <select class="form-control place-select1 show-tick" autocomplete="off" type="text" id="type" name="type" required="TRUE">
+                                                    <?php
+                                                    $EXCURSIO_TYPE = new ExcursionType(NULL);
+                                                    foreach ($EXCURSIO_TYPE->all() as $excursion_type) {
+                                                        ?>
+                                                        <option  value="<?php echo $excursion_type['id'] ?>"><?php echo $excursion_type['name'] ?></option>
+                                                    <?php } ?>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
@@ -82,8 +98,7 @@ include_once(dirname(__FILE__) . '/auth.php');
 
                                     </div>
                                     <div class="col-md-12"> 
-                                        <input type="hidden" name="create"value="create"/>
-                                        <input type="submit" id="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
+                                        <input type="submit" name="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
                                     </div>
                                 </form>
                                 <div class="row">  </div>
@@ -108,7 +123,6 @@ include_once(dirname(__FILE__) . '/auth.php');
         <script src="js/demo.js"></script>
         <script src="js/add-new-ad.js" type="text/javascript"></script>
 
-        <script src="plugins/sweetalert/sweetalert.min.js"></script>
 
         <script src="tinymce/js/tinymce/tinymce.min.js"></script>
         <script>
@@ -137,9 +151,7 @@ include_once(dirname(__FILE__) . '/auth.php');
             });
 
 
-
         </script>
-        <script src="js/ajax/attraction.js" type="text/javascript"></script>
     </body>
 
 </html>

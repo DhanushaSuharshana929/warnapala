@@ -1,11 +1,16 @@
 <?php
+
 $visitor_message = '<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
         <title>Synotec Email</title>
 
     </head>
+
+
 
     <body>
 
@@ -32,7 +37,6 @@ $visitor_message = '<html xmlns="http://www.w3.org/1999/xhtml">
 
 
 
-                                                                                    
 
                                                                                     <td width="393">
 
@@ -50,10 +54,11 @@ $visitor_message = '<html xmlns="http://www.w3.org/1999/xhtml">
 
                                                                                                                         <font style="font-family:Verdana,Geneva,sans-serif;color:#68696a;font-size:18px">
 
- 
+                                                                                                                            <a href="' . $site_link . '" style="color:#68696a;text-decoration:none;" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://www.gallecabsandtours.com&amp;source=gmail&amp;ust=1574393192616000&amp;usg=AFQjCNGNM8_Z7ZMe7ndwFlJuHEP29nDd3Q">
+
                                                                                                                                 <h4>' . $website_name . '</h4>
 
-                                                                                                                           
+                                                                                                                            </a>
 
                                                                                                                         </font>
 
@@ -68,7 +73,7 @@ $visitor_message = '<html xmlns="http://www.w3.org/1999/xhtml">
                                                                                                     </td>
 
                                                                                                 </tr>
- 
+
 
                                                                                             </tbody></table>
 
@@ -88,14 +93,14 @@ $visitor_message = '<html xmlns="http://www.w3.org/1999/xhtml">
 
                                                             <tbody> 
                                                                 <tr> 
-                                                                    <td style="font-size:14px;color:#333;line-height:18px;font-family:Arial,Helvetica,sans-serif;padding:15px 20px 10px;font-weight: 600;" align="left"> Hi , ' .$visitor_name . ' </td> 
+                                                                    <td style="font-size:14px;color:#333;line-height:18px;font-family:Arial,Helvetica,sans-serif;padding:15px 20px 10px;font-weight: 600;" align="left"> Hi , ' . $visitor_name . ' </td> 
                                                                 </tr> 
                                                             </tbody> 
                                                         </table> 
                                                         <table style="background-color:#f5f7fa" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#F5F7FA"> 
                                                             <tbody> 
                                                                 <tr> 
-                                                                    <td style="word-wrap:break-word;font-size:14px;color:#333;line-height:18px;font-family:Arial,Helvetica,sans-serif;padding:10px 20px" align="left"> <p>	Hello, and thank you for your interest in ' . $comany_name . '.We have received your enquiry, and we will get back to you as soon as possible.</p></td> 
+                                                                    <td style="word-wrap:break-word;font-size:14px;color:#333;line-height:18px;font-family:Arial,Helvetica,sans-serif;padding:10px 20px" align="left"> <p> ' . $customer_msg. ' </p></td> 
                                                                 </tr> 
                                                                 <tr> 
                                                                     <td style="word-wrap:break-word;font-size:14px;color:#333;line-height:10px;font-family:Arial,Helvetica,sans-serif;padding:10px 20px 10px" align="left"> <p> Best regards, </p>
@@ -116,7 +121,7 @@ $visitor_message = '<html xmlns="http://www.w3.org/1999/xhtml">
                                                             <tbody><tr> 
                                                                     <td style="padding:10px 0 7px;color:#9a9a9a;text-align:left;font-family:Arial,Helvetica,sans-serif;font-size:12px" align="left"> <p style="line-height:18px;margin:0;padding:0"> 
                                                                         </p><p style="line-height:24px;margin:0;padding:0">' . $comany_name . '</p>
-                                                                        <p style="line-height:24px;margin:0;padding:0">Email : ' . $comEmail .' </p> 
+                                                                        <p style="line-height:24px;margin:0;padding:0">Email : ' . $comEmail . ' </p> 
                                                                         <p style="line-height:24px;margin:0;padding:0">Tel: ' . $comConNumber . '</p> </td> 
                                                                 </tr> 
                                                             </tbody></table> 
@@ -169,7 +174,7 @@ $company_message = '<html xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
 
-        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
         <title>Synotec Email</title>
 
@@ -202,7 +207,7 @@ $company_message = '<html xmlns="http://www.w3.org/1999/xhtml">
 
 
 
-                                                                             
+                                                                                  
 
                                                                                     <td width="393">
 
@@ -219,9 +224,13 @@ $company_message = '<html xmlns="http://www.w3.org/1999/xhtml">
                                                                                                                     <td width="67%" align="right">
 
                                                                                                                         <font style="font-family:Verdana,Geneva,sans-serif;color:#68696a;font-size:18px">
- 
+
+                                                                                                                            <a href="' . $site_link . '" style="color:#68696a;text-decoration:none;" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://www.gallecabsandtours.com&amp;source=gmail&amp;ust=1574393192616000&amp;usg=AFQjCNGNM8_Z7ZMe7ndwFlJuHEP29nDd3Q">
+
                                                                                                                                 <h4>' . $website_name . '</h4>
- 
+
+                                                                                                                            </a>
+
                                                                                                                         </font>
 
                                                                                                                     </td>
@@ -235,7 +244,8 @@ $company_message = '<html xmlns="http://www.w3.org/1999/xhtml">
                                                                                                     </td>
 
                                                                                                 </tr>
- 
+
+                                                                                 
 
                                                                                             </tbody></table>
 
@@ -255,7 +265,7 @@ $company_message = '<html xmlns="http://www.w3.org/1999/xhtml">
 
                                                             <tbody> 
                                                                 <tr> 
-                                                                    <td style="font-size:14px;color:#333;line-height:18px;font-family:Arial,Helvetica,sans-serif;padding:15px 20px 10px;font-weight: 600;" align="left"> Hi , ' .$comOwner . ' </td> 
+                                                                    <td style="font-size:14px;color:#333;line-height:18px;font-family:Arial,Helvetica,sans-serif;padding:15px 20px 10px;font-weight: 600;" align="left"> Hi , ' . $comOwner . ' </td> 
                                                                 </tr> 
                                                             </tbody> 
                                                         </table> 
@@ -307,11 +317,20 @@ $company_message = '<html xmlns="http://www.w3.org/1999/xhtml">
 
                                                                             <font style="font-family:Verdana,Geneva,sans-serif;color:#68696a;font-size:14px">
 
-                                                                                Email : <a href="mailto:'. $visitor_email .'" rel="noreferrer" target="_blank">' . $visitor_email . '</a>
+                                                                                Email : <a href="mailto:' . $visitor_email . '" rel="noreferrer" target="_blank">' . $visitor_email . '</a>
 
                                                                             </font>
 
                                                                         </li>
+                                                                        
+     <li>
+
+                                                                            <font style="font-family:Verdana,Geneva,sans-serif;color:#68696a;font-size:14px">
+
+                                                                                 Contact Number : ' . $visitor_phone . '
+                                                                            </font>
+
+                                             
 
 
 
@@ -324,7 +343,7 @@ $company_message = '<html xmlns="http://www.w3.org/1999/xhtml">
                                                            
                                                                 
                                                                 <tr> 
-                                                                    <td style="font-size:14px;color:#333;line-height:18px;font-family:Arial,Helvetica,sans-serif;padding-bottom:8px" align="left"> ' . $message .'</td> 
+                                                                    <td style="font-size:14px;color:#333;line-height:18px;font-family:Arial,Helvetica,sans-serif;padding-bottom:8px" align="left"> ' . $message . '</td> 
                                                                 </tr> 
                                                             </tbody> 
                                                         </table> </td> 

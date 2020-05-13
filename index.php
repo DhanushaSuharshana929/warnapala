@@ -1,3 +1,10 @@
+<?php
+include './class/include.php';
+
+$ABOUT_US=new Page(1);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   
@@ -84,15 +91,20 @@ include ("./header.php");
 <section class="bannercontainer row">
     <div class="rev_slider banner row m0" id="rev_slider" data-version="5.0">
         <ul>
-           
+           <?php
+           $SLIDER = new Slider (null);
+           foreach ($SLIDER->all() as $key => $slider){
+               if ($key == 0) {         
+           ?>
+            
             <li data-transition="slidehorizontal"  data-delay="10000">
-                <img src="images/slider-img/5.png"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+                <img src="upload/slider/<?php echo $slider['image_name']; ?>"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
                 <div class="tp-caption sfr tp-resizeme carpenters-h1" 
                     data-x="0" data-hoffset="690" 
                     data-y="255" data-voffset="160" 
                     data-whitespace="nowrap"
                     data-start="900">
-                    we are available
+                    <h4><?php echo $slider['title'];?></h4>
 
                 </div>
                 <div class="tp-caption sfb tp-resizeme carpenters-h2" 
@@ -118,7 +130,7 @@ include ("./header.php");
                     data-y="430" data-voffset="470" 
                     data-whitespace="nowrap"
                     data-start="1800">                    
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam exercitation.
+                    <h3><?php echo $slider['description'];?></h3>
                 </div>
                 <div class="tp-caption sfb tp-resizeme carpenters-b" 
                     data-x="0" data-hoffset="690" 
@@ -130,8 +142,11 @@ include ("./header.php");
                 </div>
             </li>
             
+           <?php
+           } else {
+           ?>
             <li data-transition="parallaxvertical">
-                <img src="images/slider-img/4.png"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+                <img src="upload/slider/<?php echo $slider['image_name']; ?>"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
                 
                 <div class="tp-caption sfb tp-resizeme carpenters-ul type2" 
                     data-x="left" data-hoffset="620" 
@@ -149,32 +164,16 @@ include ("./header.php");
                     data-y="320" data-voffset="160" 
                     data-whitespace="nowrap"
                     data-start="900">
-                    <span>Design</span> futniture<br><span>Make</span> doors
+                    <h3><?php echo $slider['title'];?></h3>
                 </div>
             </li>
             
-             <li data-transition="parallaxvertical">
-                <img src="images/slider-img/3.png"  alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
-                
-                <div class="tp-caption sfb tp-resizeme carpenters-ul type2" 
-                    data-x="left" data-hoffset="620" 
-                    data-y="255" data-voffset="470" 
-                    data-whitespace="nowrap"
-                    data-start="1500">
-                    <ul class="nav">
-                        <li><a href="#">Domestic</a></li>
-                        <li><a href="#">Commercial</a></li>
-                        <li><a href="#">Industrial</a></li>
-                    </ul>
-                </div>
-                <div class="tp-caption sfr tp-resizeme carpenters-h1 type2" 
-                    data-x="left" data-hoffset="620" 
-                    data-y="320" data-voffset="160" 
-                    data-whitespace="nowrap"
-                    data-start="900">
-                    <span>Design</span> futniture<br><span>Make</span> doors
-                </div>
-            </li>
+            <?php 
+            }
+           }
+            ?>
+            
+             
         </ul>
     </div>
  </section>
@@ -184,17 +183,12 @@ include ("./header.php");
    <div class="container">
        <div class="row">
            <div class="col-sm-5 worker-image">
-               <img src="images/expreence/1.png" alt="">
+               <img src="upload/page/<?php echo $ABOUT_US->image_name?>" alt="">
            </div>
            <div class="col-sm-7 experience-info">
               <div class="content">
-                  <h2>OVER 15 YEARS EXPERIENCE IN INDUSTRY</h2> 
-                  <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
-                  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
-                  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
-                  <br/>
-                  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
-                  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec.
+                  <h2><?php echo $ABOUT_US->title?></h2> 
+                  <p><?php echo $ABOUT_US->description?>
                   </p> 
                   <div class="row m0">
                             <button type="submit" class="btn btn-default submit">Read More</button>
@@ -214,34 +208,19 @@ include ("./header.php");
         </div>
         <div class="we-do-slider">
             <div class="we-sliders">
+                <?php 
+                $PRODUCT_TYPE = new ProductType(null);
+                foreach ($PRODUCT_TYPE->all() as $product_type) {
+                ?>
                 <div class="item text-center">
                     <div class="post-image">
-                        <img src="images/we-do/1.png"  alt="">
+                        <img src="upload/product-type/<?php echo $product_type['image_name'];?>"  alt="">
                     </div>
-                    <a href="product-type.php"><h4>HARDWOOD FLOORING</h4></a>
+                    <a href="product-type.php"><h4><?php echo $product_type['short_description'];?></h4></a>
                    
                 </div>
-                <div class="item text-center">
-                    <div class="post-image">
-                        <img src="images/we-do/2.png"  alt="">
-                    </div>
-                    <a href="product-type.php"><h4>Home Wood Work</h4></a>
-                    
-                </div>
-                <div class="item text-center">
-                    <div class="post-image">
-                        <img src="images/we-do/3.png"  alt="">
-                    </div>
-                    <a href="product-type.php"><h4>Indoor Furniture</h4></a>
-                   
-                </div>
-                <div class="item text-center">
-                    <div class="post-image">
-                        <img src="images/we-do/4.png"  alt="">
-                    </div>
-                    <a href="product-type.php"><h4>Outdoor Furniture</h4></a>
-                   
-                </div>
+                <?php } ?>
+              
             </div>
         </div>
     </div>
