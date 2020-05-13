@@ -14,7 +14,7 @@ $ATTRACTION = new Attraction($id);
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Excursion</title>
+        <title>Attraction</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -45,7 +45,7 @@ $ATTRACTION = new Attraction($id);
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Edit Excursion
+                                    Edit Attraction
                                 </h2>
                                 <ul class="header-dropdown">
                                     <li class="">
@@ -56,8 +56,33 @@ $ATTRACTION = new Attraction($id);
                                 </ul>
                             </div>
                             <div class="body">
-                                <form class="form-horizontal" method="post"  id="form-data" enctype="multipart/form-data"> 
+                                <form class="form-horizontal" method="post" action="post-and-get/attraction.php" enctype="multipart/form-data"> 
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <label class="form-label">Excursion Type</label>
+                                                <select class="form-control place-select1 show-tick" autocomplete="off" type="text" id="type" name="type" required="TRUE">
+                                                    <?php
+                                                    $EXCURSIO_TYPE = new ExcursionType(NULL);
+                                                    foreach ($EXCURSIO_TYPE->all() as $excursion_type) {
+                                                        if ($excursion_type['id'] == $ATTRACTION->type) {
+                                                            ?>
+                                                            <option  value="<?php echo $excursion_type['id'] ?>" selected=""><?php echo $excursion_type['name'] ?></option>
+                                                            <?php
+                                                        } else {
+                                                            ?>
 
+                                                            <option  value="<?php echo $excursion_type['id'] ?>" ><?php echo $excursion_type['name'] ?></option>
+
+                                                            <?php
+                                                        }
+                                                    }
+                                                    ?>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
@@ -69,9 +94,7 @@ $ATTRACTION = new Attraction($id);
                                     <div class="col-md-12">                                       
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="file" name="image" class="form-control" value="<?php echo $ATTRACTION->image_name; ?>"   >
-                                                <input type="hidden" id="image" class="form-control" value="<?php echo $ATTRACTION->image_name; ?>"  >
-
+                                                <input type="file" id="image" class="form-control" value="<?php echo $ATTRACTION->image_name; ?>"  name="image">
                                                 <img src="../upload/attraction/<?php echo $ATTRACTION->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
                                             </div>
                                         </div>
@@ -98,8 +121,8 @@ $ATTRACTION = new Attraction($id);
                                     <div class="col-md-12">
                                         <input type="hidden" id="oldImageName" value="<?php echo $ATTRACTION->image_name; ?>" name="oldImageName"/>
                                         <input type="hidden" id="id" value="<?php echo $ATTRACTION->id; ?>" name="id"/>
-                                        <input type="hidden" name="update" value="update"/>
-                                        <button type="submit" class="btn btn-primary m-t-15 waves-effect" id="update" value="update">Save Changes</button>
+<!--                                            <input type="hidden" id="authToken" value="<?php echo $_SESSION["authToken"]; ?>" name="authToken"/>-->
+                                        <button type="submit" class="btn btn-primary m-t-15 waves-effect" name="update" value="update">Save Changes</button>
                                     </div>
                                     <div class="row clearfix">  </div>
                                 </form>
@@ -119,7 +142,7 @@ $ATTRACTION = new Attraction($id);
         <script src="js/admin.js"></script>
         <script src="js/demo.js"></script>
         <script src="js/add-new-ad.js" type="text/javascript"></script>
-        <script src="plugins/sweetalert/sweetalert.min.js"></script>
+
 
         <script src="tinymce/js/tinymce/tinymce.min.js"></script>
         <script>
@@ -149,7 +172,6 @@ $ATTRACTION = new Attraction($id);
 
 
         </script>
-        <script src="js/ajax/attraction.js" type="text/javascript"></script>
     </body>
 
 </html>

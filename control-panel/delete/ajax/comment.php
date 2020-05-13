@@ -1,13 +1,13 @@
 <?php
 
-include_once(dirname(__FILE__) . '/../class/include.php');
-include_once(dirname(__FILE__) . '/auth.php');
+include_once(dirname(__FILE__) . '/../../../class/include.php');
+include_once(dirname(__FILE__) . '/../../auth.php');
 
 if ($_POST['option'] == 'delete') {
 
     $COMMENT = new Comments($_POST['id']);
   
-     unlink('../upload/comments/' . $COMMENT->image_name);
+     unlink('../../../upload/comments/' . $COMMENT->image_name);
     
     $result = $COMMENT->delete();
 

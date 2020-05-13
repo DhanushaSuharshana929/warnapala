@@ -9,6 +9,7 @@ if (isset($_POST['create'])) {
 
 
     $ATTRACTION->title = $_POST['title'];
+    $ATTRACTION->type = $_POST['type'];
     $ATTRACTION->short_description = $_POST['short_description'];
     $ATTRACTION->description = $_POST['description'];
 
@@ -23,8 +24,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
-        $handle->image_x = 350;
-        $handle->image_y = 404;
+        $handle->image_x = 330;
+        $handle->image_y = 250;
 
         $handle->Process($dir_dest);
 
@@ -35,11 +36,33 @@ if (isset($_POST['create'])) {
     }
 
     $ATTRACTION->image_name = $imgName;
-    $ATTRACTION->create();
 
-    $result = ["status" => 'success'];
-    echo json_encode($result);
-    exit();
+    $VALID->check($ATTRACTION, [
+        'title' => ['required' => TRUE],
+        'short_description' => ['required' => TRUE],
+        'description' => ['required' => TRUE],
+        'image_name' => ['required' => TRUE]
+    ]);
+
+    if ($VALID->passed()) {
+        $ATTRACTION->create();
+
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        $VALID->addError("Your data was saved successfully", 'success');
+        $_SESSION['ERRORS'] = $VALID->errors();
+        header("location: ../view-attraction-photos.php?id=" . $ATTRACTION->id);
+    } else {
+
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+
+        $_SESSION['ERRORS'] = $VALID->errors();
+
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
 }
 
 if (isset($_POST['update'])) {
@@ -56,8 +79,9 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 350;
-        $handle->image_y = 404;
+        $handle->image_x = 330;
+        $handle->image_y = 250;
+
         $handle->Process($dir_dest);
 
         if ($handle->processed) {
@@ -69,15 +93,40 @@ if (isset($_POST['update'])) {
     $ATTRACTION = new Attraction($_POST['id']);
 
 
+    $ATTRACTION->type = $_POST['type'];
     $ATTRACTION->image_name = $_POST['oldImageName'];
     $ATTRACTION->title = $_POST['title'];
     $ATTRACTION->short_description = $_POST['short_description'];
     $ATTRACTION->description = $_POST['description'];
 
-    $ATTRACTION->update();
-    $result = ["id" => $_POST['id']];
-    echo json_encode($result);
-    exit();
+    $VALID = new Validator();
+    $VALID->check($ATTRACTION, [
+        'title' => ['required' => TRUE],
+        'short_description' => ['required' => TRUE],
+        'description' => ['required' => TRUE],
+        'image_name' => ['required' => TRUE]
+    ]);
+
+    if ($VALID->passed()) {
+        $ATTRACTION->update();
+
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        $VALID->addError("Your changes saved successfully", 'success');
+        $_SESSION['ERRORS'] = $VALID->errors();
+
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    } else {
+
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+
+        $_SESSION['ERRORS'] = $VALID->errors();
+
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
 }
 
 if (isset($_POST['save-data'])) {
