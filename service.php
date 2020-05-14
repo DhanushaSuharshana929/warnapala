@@ -1,3 +1,6 @@
+<?php
+include './class/include.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   
@@ -77,60 +80,20 @@ include ("./header.php");
 <section class="row our-services sectpad">  
     <div class="container">
         <div class="row">
+            <?php
+            $SERVICE = new Service(null);
+            foreach ($SERVICE ->all()as $service){
+            ?>
             <div class="service-part col-sm-6 col-lg-4">
                 <div class="service-icon">
                     <img src="images/services/pencil.png" alt="">
                 </div>
                 <div class="service-description">
-                    <h4>Exterior Design</h4>
-                    <p>We cut immaculate plans to fabricate imaginative sites that draw in clients on both desktop and cell phones with UI.</p>
+                    <h4><?php echo $service ['title'];?></h4>
+                    <p><?php echo $service ['description'];?></p>
                 </div>
             </div>
-            <div class="service-part col-sm-6 col-lg-4">
-               <div class="service-icon">
-                    <img src="images/services/pencil.png" alt="">
-                </div>
-                <div class="service-description">
-                    <h4>Office Furniture</h4>
-                    <p>We cut immaculate plans to fabricate imaginative sites that draw in clients on both desktop and cell phones with UI.</p>
-                </div>
-            </div>
-            <div class="service-part col-sm-6 col-lg-4">
-                <div class="service-icon">
-                    <img src="images/services/pencil.png" alt="">
-                </div>
-                <div class="service-description">
-                    <h4>Home furniture</h4>
-                    <p>We cut immaculate plans to fabricate imaginative sites that draw in clients on both desktop and cell phones with UI.</p>
-                </div>
-            </div>
-            <div class="service-part col-sm-6 col-lg-4">
-                <div class="service-icon">
-                    <img src="images/services/pencil.png" alt="">
-                </div>
-                <div class="service-description">
-                    <h4>Office wooden interior</h4>
-                    <p>We cut immaculate plans to fabricate imaginative sites that draw in clients on both desktop and cell phones with UI.</p>
-                </div>
-            </div>
-            <div class="service-part col-sm-6 col-lg-4">
-               <div class="service-icon">
-                    <img src="images/services/pencil.png" alt="">
-                </div>
-                <div class="service-description">
-                    <h4>wooden self & racks</h4>
-                    <p>We cut immaculate plans to fabricate imaginative sites that draw in clients on both desktop and cell phones with UI.</p>
-                </div>
-            </div>
-            <div class="service-part col-sm-6 col-lg-4">
-                <div class="service-icon">
-                    <img src="images/services/pencil.png" alt="">
-                </div>
-                <div class="service-description">
-                    <h4>Kitchen modeling</h4>
-                    <p>We cut immaculate plans to fabricate imaginative sites that draw in clients on both desktop and cell phones with UI.</p>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>
