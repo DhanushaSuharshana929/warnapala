@@ -108,7 +108,7 @@ include_once(dirname(__FILE__) . '/auth.php');
         <script src="plugins/node-waves/waves.js"></script>
         <script src="js/admin.js"></script>
         <script src="js/demo.js"></script>
-        <script src="js/add-new-ad.js" type="text/javascript"></script>
+
 
         <script src="plugins/sweetalert/sweetalert.min.js"></script>
         <script src="tinymce/js/tinymce/tinymce.min.js"></script>
