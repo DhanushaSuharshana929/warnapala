@@ -89,7 +89,7 @@ jQuery(document).ready(function () {
 
             if (!validate()) {
 
-                return;
+                return; 
 
             }
 

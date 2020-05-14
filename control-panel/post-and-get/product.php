@@ -23,8 +23,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
-        $handle->image_x = 372;
-        $handle->image_y = 277;
+        $handle->image_x = 900;
+        $handle->image_y = 600;
 
         $handle->Process($dir_dest);
 
@@ -37,7 +37,7 @@ if (isset($_POST['create'])) {
     $PRODUCT->image_name = $imgName;
     $PRODUCT->create();
 
-    $result = ["id" => $PRODUCT->type];
+    $result = ["id" => $PRODUCT->id];
     echo json_encode($result);
     exit();
 }

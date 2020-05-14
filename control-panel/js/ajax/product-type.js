@@ -65,7 +65,7 @@ $(document).ready(function () {
         } else {
             var formData = new FormData($('#form-data')[0]);
             $.ajax({
-                url: "post-and-get/product-type.php",
+                url: "post-and-get/service.php",
                 type: "POST",
                 data: formData,
                 async: false,
@@ -79,7 +79,7 @@ $(document).ready(function () {
                         showConfirmButton: false
                     }, function () {
                         setTimeout(function () {
-                            window.location.replace("./view-products.php?id=" + result.id);
+                            window.location.replace("create-service.php");
                         }, 1500);
                     });
                 },
@@ -95,7 +95,7 @@ $(document).ready(function () {
         event.preventDefault();
         tinymce.triggerSave();
 
-        if (!$('#name').val() || $('#name').val().length === 0) {
+        if (!$('#title').val() || $('#title').val().length === 0) {
             swal({
                 title: "Error!",
                 text: "Please enter title..!",
@@ -130,7 +130,7 @@ $(document).ready(function () {
         } else {
             var formData = new FormData($('#form-data')[0]);
             $.ajax({
-                url: "post-and-get/product-type.php",
+                url: "post-and-get/service.php",
                 type: "POST",
                 data: formData,
                 async: false,
@@ -138,13 +138,13 @@ $(document).ready(function () {
                 success: function (result) {
                     swal({
                         title: "Success!",
-                        text: "Your data was changed successfully!.....!",
+                        text: "Your changes saved successfully!...",
                         type: 'success',
                         timer: 2000,
                         showConfirmButton: false
                     }, function () {
                         setTimeout(function () {
-                            window.location.replace("edit-product-type.php?id=" + result.id);
+                            window.location.replace("edit-service.php?id=" + result.id);
                         }, 1500);
                     });
                 },
